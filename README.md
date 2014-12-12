@@ -15,7 +15,7 @@ Run commands as follows in your shell
 
 ```
 docker pull domitry/sciruby-docker
-docker run -i -p 9999:9999 domitry/sciruby-docker:latest
+docker run -i -p 9999:9999 -v $PWD:/notebooks/mount domitry/sciruby-docker:latest
 # and open localhost:9999 on your browser
 ```
 
